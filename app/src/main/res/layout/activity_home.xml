@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#030450"
+        app:title="PayEase"
+        app:titleTextColor="@color/white">
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/hamberger_logo"
+            android:layout_marginStart="240dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/upiText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="20dp"
+        android:text="UPI Money Transfer"
+        android:paddingStart="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/firstrow"
+        android:layout_below="@id/upiText"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/tophone"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/tophone_logo"
+            android:layout_marginStart="30dp"/>
+
+        <ImageButton
+            android:id="@+id/tocontact"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/contact_icon"
+            android:layout_marginStart="50dp"/>
+
+        <ImageButton
+            android:id="@+id/tobank"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/bank_logo"
+            android:layout_marginStart="50dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondrow"
+        android:layout_below="@+id/firstrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/phonetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:text="To Phone \n Number"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/contacttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:text="To \n Contacts"
+            android:textAlignment="center"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/banktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="50dp"
+            android:text="To Bank \n or Self A/c"
+            android:textAlignment="center"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/thirdrow"
+        android:layout_below="@id/secondrow"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/balance"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/payment_logo"
+            android:layout_marginStart="30dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fourthrow"
+        android:layout_below="@+id/thirdrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/balancetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:text="Balance &amp;\n History"
+            android:textAlignment="center"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/rechargeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fourthrow"
+        android:layout_marginTop="20dp"
+        android:text="Recharge &amp; Bill Payments"
+        android:paddingStart="15dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/fifthrow"
+        android:layout_below="@id/rechargeText"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/electricityRbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/electricity_recharge"
+            android:layout_marginStart="30dp"/>
+
+        <ImageButton
+            android:id="@+id/dthRbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/dth_recharge"
+            android:layout_marginStart="50dp"/>
+
+        <ImageButton
+            android:id="@+id/mobileRbtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/mobile_recharge"
+            android:layout_marginStart="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sixthrow"
+        android:layout_below="@+id/fifthrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/electrictytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:text="Electricity \n Recharge"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/dthtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Dth \n Recharge"
+            android:textAlignment="center"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:id="@+id/mobiletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="40dp"
+            android:text="Mobile \n Recharge"
+            android:textAlignment="center"
+            android:textColor="#030450"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+</RelativeLayout>

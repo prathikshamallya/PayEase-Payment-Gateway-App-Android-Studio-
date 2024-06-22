@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030450"
+    tools:context=".ToBankActivity">
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/backBank"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/back_button"/>
+
+        <TextView
+            android:id="@+id/signupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Money to Any Bank A/c"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_margin="12dp"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/secondlayout"
+        android:layout_below="@id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/acc_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Receiver's Bank Account Number"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#30ffffff" />
+
+        <EditText
+            android:id="@+id/ifsc_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Receiver's IFSC Code"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#30ffffff" />
+
+        <EditText
+            android:id="@+id/acc_holder_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Bank Account Holder's Name"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#30ffffff" />
+
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount to send"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#30ffffff" />
+
+        <EditText
+            android:id="@+id/upiB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your UPI Pin"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:padding="20dp"
+            android:background="#30ffffff" />
+
+
+        <Button
+            android:id="@+id/confrmbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Confirm"
+            android:textColor="#030450"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"/>
+    </LinearLayout>
+</RelativeLayout>

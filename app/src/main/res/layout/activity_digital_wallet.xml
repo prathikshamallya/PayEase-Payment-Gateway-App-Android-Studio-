@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#030450"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DigitalWalletActivity">
+
+    <ImageButton
+        android:id="@+id/backwallet"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_button"/>
+    <TextView
+        android:id="@+id/DWText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digital Wallet"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/firstlayout"
+        android:layout_below="@id/DWText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/wallettext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Wallet Balance"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/walletamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wallettext"
+            android:text="Rs. 0/-"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/secondlayout"
+        android:layout_below="@id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/addwallettext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Money to"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/digitalwallettext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:text="Digital Wallet"
+            android:textColor="#22577a"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/addmoney"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/digitalwallettext"
+            android:background="#edede9"
+            android:textStyle="bold"
+            android:hint="Rs.500"
+            android:textColorHint="#030450"
+            android:textColor="#030450"
+            android:layout_margin="10dp"
+            android:padding="20dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/proceedbtn"
+            android:layout_below="@id/addmoney"
+            android:layout_centerInParent="true"
+            android:backgroundTint="#030450"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed to add"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

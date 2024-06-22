@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#030450"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/backbalancebtn"
+        android:layout_margin="20dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_button"/>
+
+    <TextView
+        android:id="@+id/balanceHistoryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Balance &amp; History"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/AvailBalanceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Available Balance"
+        android:layout_below="@+id/balanceHistoryText"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:id="@+id/balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AvailBalanceText"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="15dp"/>
+
+    <EditText
+        android:id="@+id/addBalance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balance"
+        android:hint="Enter Money to add"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"
+        android:inputType="numberDecimal"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:drawablePadding="15dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addBalance"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="#f1faee"
+        android:text="Add Money"
+        android:textColor="#030450"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/TransactioHistoryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:layout_below="@+id/addMoney"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+        <ListView
+            android:id="@+id/TranList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/TransactioHistoryText"
+            android:padding="10dp"/>
+</RelativeLayout>

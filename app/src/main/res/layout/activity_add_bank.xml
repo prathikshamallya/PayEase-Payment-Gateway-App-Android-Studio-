@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#030450"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <ImageButton
+        android:id="@+id/backbtnBank"
+        android:layout_margin="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_button"/>
+
+    <TextView
+        android:id="@+id/bankDetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Bank Details"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_margin="25dp"/>
+
+    <EditText
+        android:id="@+id/bankName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bankDetailTitle"
+        android:hint="Enter Bank-Name"
+        android:inputType="text"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff" />
+
+    <EditText
+        android:id="@+id/BankaccNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bankName"
+        android:hint="Enter Bank Account Number"
+        android:inputType="number"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff" />
+
+    <EditText
+        android:id="@+id/ifscC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/BankaccNum"
+        android:hint="Enter IFSC Code"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff" />
+
+    <EditText
+        android:id="@+id/holderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ifscC"
+        android:hint="Enter Bank Account Holder Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/upiPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/holderName"
+        android:hint="Enter UPI Pin"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/balanceAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upiPin"
+        android:hint="Enter Balance"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#30ffffff"
+        android:inputType="numberDecimal" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balanceAmt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#f1faee"
+        android:text="Add Bank"
+        android:textColor="#030450"
+        android:textSize="25sp" />
+</RelativeLayout>

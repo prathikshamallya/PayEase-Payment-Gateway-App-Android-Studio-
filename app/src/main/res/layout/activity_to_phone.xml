@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#030450"
+    android:layout_height="match_parent"
+    tools:context=".ToPhoneActivity">
+
+    <ImageButton
+        android:id="@+id/backPhone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/back_button"/>
+
+    <TextView
+        android:id="@+id/phoneTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Money to Any Phone Number"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number"
+        android:layout_below="@+id/backPhone"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30ffffff"
+        android:hint="Enter Phone Number"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_phone_24"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/amtSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phonenumber"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30ffffff"
+        android:hint="Enter Amount to Send"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_attach_money_24"
+        android:drawablePadding="10dp"/>
+    <EditText
+        android:id="@+id/upi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/amtSend"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#30ffffff"
+        android:hint="Enter UPI Pin"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:inputType="textPassword"
+        android:drawableLeft="@drawable/baseline_password_24"
+        android:drawablePadding="10dp"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sendbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upi2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#f1faee"
+        android:text="Send"
+        android:textColor="#030450"
+        android:textSize="25sp" />
+</RelativeLayout>

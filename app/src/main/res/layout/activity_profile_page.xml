@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#030450"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfilePageActivity">
+
+        <ImageButton
+            android:id="@+id/backprofilebtn"
+            android:background="@drawable/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"/>
+
+        <ImageView
+            android:id="@+id/profileImg"
+            android:background="@drawable/profile_logo"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Your Profile Page"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginTop="150dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/profileText"
+            android:layout_margin="10dp"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/detailText"
+                android:text="Profile Information:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="15dp" />
+
+            <TextView
+                android:id="@+id/userText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp" />
+
+            <TextView
+                android:id="@+id/emailText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/phoneText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/bankAccText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phoneText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/bankNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankAccText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/ifscText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bankNameText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/balanceText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ifscText"
+                android:textSize="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/settingText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/balanceText"
+                android:text="Settings:"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_margin="15dp" />
+
+            <ListView
+                android:id="@+id/plist"
+                android:layout_below="@id/settingText"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#030450"
+    android:layout_height="match_parent"
+    tools:context=".ToPhoneActivity">
+
+    <ImageButton
+        android:id="@+id/backSuccess"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/back_button"/>
+
+    <TextView
+        android:id="@+id/succesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Receipt"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/successTick"
+        android:layout_below="@id/backSuccess"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/success"/>
+
+    <TextView
+        android:id="@+id/sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/successTick"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/receiver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/sender"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/paidAmt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/receiver"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/updatedBal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/paidAmt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_below="@id/updatedBal"
+        android:text="Done"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#030450"
+        android:backgroundTint="@color/white"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
